@@ -1,0 +1,6 @@
+npm_modules
+.git
+.gitignore
+.env
+npm-debug.log
+Dokerfile
