@@ -1,0 +1,65 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:815598787371:task-definition/react-task2:2",
+    "containerDefinitions": [
+        {
+            "name": "react-bgchanger-cn1",
+            "image": "815598787371.dkr.ecr.ap-south-1.amazonaws.com/react-bgcchanger",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "name": "react-bgchanger-cn-80-tcp",
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "ulimits": [],
+            "systemControls": []
+        }
+    ],
+    "family": "react-task2",
+    "executionRoleArn": "arn:aws:iam::815598787371:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "revision": 2,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE",
+        "MANAGED_INSTANCES"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2026-01-19T12:33:10.958Z",
+    "registeredBy": "arn:aws:iam::815598787371:root",
+    "enableFaultInjection": false,
+    "tags": []
+}
