@@ -44,7 +44,7 @@ jobs:
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
         task-definition: task-definition.json
-        container-name: react-bgchanger
+        container-name: react-bgchanger-cn1
         image: ${{ secrets.ECR_REPO }}:${{ github.sha }}
 
     - name: Deploy new task definition to ECS
